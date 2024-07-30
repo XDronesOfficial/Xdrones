@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Fotos e Vídeos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venda de Fotos e Vídeos</h1>
+        <nav>
+            <ul>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fotos">
+            <h2>Fotos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="foto1.jpg" alt="Foto 1">
+                    <figcaption>Foto 1 - $10</figcaption>
+                </figure>
+                <figure>
+                    <img src="foto2.jpg" alt="Foto 2">
+                    <figcaption>Foto 2 - $15</figcaption>
+                </figure>
+                <!-- Adicione mais fotos aqui -->
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Vídeos</h2>
+            <div class="gallery">
+                <figure>
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Vídeo 1 - $20</figcaption>
+                </figure>
+                <figure>
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Vídeo 2 - $25</figcaption>
+                </figure>
+                <!-- Adicione mais vídeos aqui -->
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Venda de Fotos e Vídeos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
